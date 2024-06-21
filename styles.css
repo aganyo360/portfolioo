@@ -3,10 +3,39 @@
  box-sizing: border-box;
  margin: 0;
  padding: 0;
- font-family: sans-serif ;
+ font-family:"Roboto", sans-serif ;
 
 }
+li{
+    list-style-type: none;
+}
+
+/* NAVIGATION SECION */
 #personal-logo{
- height: 50px;
+/* filter: invert(1);  */
+height: 50px;
  width: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+    height: 100px;
+
+}
+.nav__link--list{
+    display: flex;
+    
+}
+.nav__link{
+    margin: 0 12px;
+}
+.nav__link--anchor{
+  text-decoration: none;
+  font-size: 15px;
+  color: #242424;
+  font-weight: 700;
 }
