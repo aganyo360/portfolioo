@@ -59,11 +59,34 @@ LANDING SECTION
     border-radius: 50%;
     background-color: #242424;
     color: #fff;
-    font-size: 30px;
+    font-size: 32px;
     border: none;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
 
 }
-
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scroll__icon{
+    width: 20px;
+    height: 30px;
+    border: 2px solid #242424;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll__icon:after{
+    content: "";
+    background-color: #242424;
+    width: 4px;
+    height: 6px;
+}
 
 /* NAVIGATION SECION */
 
