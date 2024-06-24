@@ -204,6 +204,23 @@ nav{
     align-items: center;
     justify-content: center;
  }
+/* MODAL */
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    height: 700px;
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+}
+
+
+
+
 
 
  /* 
