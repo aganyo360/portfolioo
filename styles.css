@@ -16,6 +16,21 @@ button{
 li{
     list-style-type: none;
 }
+input, textarea{
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    outline: none;
+    border: 3px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+}
+label{
+    font-size: 14px;
+    font-weight: 400;
+}
 p{
     /* line-height: 1.5; */
     font-size: 16px;
