@@ -353,6 +353,7 @@ nav{
     font-size: 40px;
     text-align: center;
     padding: 28px;
+    z-index: -1;
 }
 .modal__exit{
     position: absolute;
