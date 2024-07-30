@@ -10,6 +10,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <!-- <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script> -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "SvmNeIKp872mseky5",
+  });
+})();
+</script>
+<script src="index.js"></script>
   </head>
   <body>
     <!-- navigation section -->
@@ -130,7 +141,7 @@
           <h4 class="modal__sub-title modal__sub-title--contact">
             I'm currentlty open to new opportunities
           </h4>
-          <form action="" id="contact__form">
+          <form onsubmit="contact(event)" id="contact__form">
             <div class="form__item">
               <label class="form__item--label">Name:</label>
               <input
@@ -138,7 +149,7 @@
                 class="input"
                 id="name"
                 name="user_name"
-                required
+            
               />
               </div>
             <div class="form__item">
@@ -148,7 +159,6 @@
                 class="input"
                 id="name"
                 name="user_email"
-                required
               />
               </div>
             <div class="form__item">
