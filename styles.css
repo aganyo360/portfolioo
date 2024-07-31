@@ -249,7 +249,7 @@ nav{
     overflow: hidden;
     border-radius: 20px;
     z-index: -1;
-    transition: visibility 0.5s, z-index 0.5s, box-shadow 1s ease;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 .modal--open .modal{
     z-index: 60;
@@ -262,11 +262,27 @@ nav{
     width: 50%;
     padding: 40px 72px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 300ms all ease-in;
 }
 .modal__about{
     background-color: rgb(245, 245, 245);
+    transform: translateX(-110%);
     
 }
+.modal__contact{
+    background-color: #242424;
+    color: white;
+    transform: translateX(110%);
+}
+.modal--open .modal__about,
+.modal--open .modal__contact
+{
+    transform: translateX(0%);
+}
+
 
 
 .modal__languages{
@@ -300,10 +316,7 @@ nav{
     width: 100%;
 }
 
-.modal__contact{
-    background-color: #242424;
-    color: white;
-}
+
 
 .modal__title{
     font-size: 26px;
@@ -347,7 +360,7 @@ nav{
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: -1;
@@ -366,6 +379,7 @@ nav{
 }
 .modal__overlay--visible{
     z-index: 1;
+    display: flex;
 }
 .modal__exit{
     position: absolute;
