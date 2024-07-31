@@ -1,6 +1,16 @@
-// Public Key
-// service id
-// template_id
+let isModalOpen= false;
+let contrastToggle= false;
+
+function toggleContrast(){
+    contrastToggle=!contrastToggle
+    if(toggleContrast){
+        document.body.classList+= " dark-theme"
+    }
+    else{
+        document.body.classList.remove("dark-theme")
+    }
+
+}
 function contact(event){
 
     event.preventDefault();
@@ -28,7 +38,6 @@ function contact(event){
     },1000)
 }
 
-let isModalOpen= false;
 function ToggleModal(){
    if(isModalOpen){
     isModalOpen=false;
