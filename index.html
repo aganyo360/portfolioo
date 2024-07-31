@@ -44,7 +44,7 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="ToggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -55,7 +55,7 @@
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fas fa-circle-half-stroke fa-adjust"></i
+              ><i class="fas fa-circle-half-stroke fa-adjust" onclick="toggleContrast()"></i
             ></a>
           </li>
         </ul>
@@ -70,7 +70,7 @@
             I'm a <b class="orange">Frontend Software Engineer</b> with a strong
             Passion for building web applications with great user experiences.
             <br />
-            Here's a bit more <b class="orange">about me.</b>
+            Here's a bit more <b class="orange click" onclick="ToggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a
@@ -102,7 +102,7 @@
       </a>
       <div class="modal">
         <div class="modal__half modal__about">
-          <h3 class="modal__title modal__title--about">
+          <h3 class="modal__title modal__title--about ">
             Here's a bit more about me
           </h3>
           <h4 class="modal__sub-title modal__sub-title--about">
@@ -136,7 +136,7 @@
          
         </div>
         <div class="modal__half modal__contact">
-          <i class=" modal__exit fas fa-times click"></i>
+          <i class=" modal__exit fas fa-times click" onclick="ToggleModal()"></i>
 
           <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
           <h4 class="modal__sub-title modal__sub-title--contact">
