@@ -180,6 +180,24 @@ nav{
     padding: 0 20px;
 
 }
+nav,
+.scroll,
+.header{
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 800ms;
+
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+    
+}
+
 #personal-logo{
     /* filter: invert(1);  */
     height: 50px;
@@ -235,6 +253,17 @@ nav{
     align-items: center;
     justify-content: center;
  }
+.dark-theme title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .header__para
+
+{
+    color: white;
+}
+
+
 /* MODAL */
 .modal{
     position: absolute;
