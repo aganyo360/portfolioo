@@ -6,6 +6,9 @@
  font-family:"Roboto", sans-serif ;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(245, 245, 245);
 
@@ -130,9 +133,11 @@ LANDING SECTION
     color: #fff;
     font-size: 32px;
     border: none;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.2);
 
 }
 .scroll{
@@ -530,6 +535,7 @@ nav,
     margin: 16px 0;
  }
  footer{
+    position: relative;
     background-color: #242424;
     display: flex;
     padding: 6% 0;
@@ -556,3 +562,99 @@ nav,
  .footer__copyright{
     color: white;
  }
+
+
+.shape{
+    position: fixed;
+  }
+.shape--0{
+    left:5vw ;
+    top: 15vh ;
+}
+.shape--1{
+    left: 50vw;
+    top: 15vh;
+}
+.shape--2{
+    left: 80vw;
+    top:15vh ;
+}
+.shape--3{
+    left:5vw ;
+    top:50vh;
+}
+.shape--4{
+    left:50vw;
+    top: 50vh;
+}
+.shape--5{
+    left: 80vw;
+    top:50vh ;
+}
+.shape--6{
+    left:5vw ;
+    top: 80vh;
+}
+.shape--7{
+    left:50vw ;
+    top:80vh;
+}
+.shape--8{
+    left: 80vw;
+    top: 80vh;
+}
+
+
+
+/* MAKIN IT RESPONSIVE UNDER DIFF SCREENS */
+/* smallphones, tablets, large smartphones */
+@media (max-width: 768px) {
+    .title{
+        font-size: 80px;
+    }
+    .header__para{
+        font-size: 20px;
+    }
+    .modal{
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .modal__half{
+        width: 100%;
+    }
+}
+
+/* smallphones */
+@media (max-width: 480px){
+    .title{
+        font-size: 52px;
+    }
+    .header__para{
+        font-size: 18px;
+    }
+
+    .nav__link:first-child{
+        display: none;
+    }
+    .project__description--para{
+        display: none;
+    }
+    .project__description{
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+
+    }
+    .project__description--sub-title{
+        margin-bottom: 8px;
+    }
+    .modal__half{
+        padding: 40px;
+    }
+}
