@@ -24,13 +24,13 @@
   </head>
   <body>
     <!-- navigation section -->
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img src="./assests/logo.svg" id="personal-logo" alt="" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="ToggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -39,7 +39,7 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -93,9 +93,12 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="ToggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn click" onclick="ToggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      
       <a href="#projects" class="scroll">
         <div class="scroll__icon click">
         </div>
@@ -150,6 +153,7 @@
                 class="input"
                 id="name"
                 name="user_name"
+                required
             
               />
               </div>
@@ -160,11 +164,12 @@
                 class="input"
                 id="name"
                 name="user_email"
+                required
               />
               </div>
             <div class="form__item">
               <label class="form__item--label">Message:</label>
-              <textarea class="input" name="message" id=""></textarea>
+              <textarea class="input" name="message" id="" required></textarea>
               
               </div>
               
@@ -182,6 +187,17 @@
         <div class="">
         </div>
       </div>
+    
+      <img src="./assests/semicircle.svg" class="shape shape--0" >
+      <img src="./assests/circle.svg" class="shape shape--1  ">
+      <img src="./assests/squiggly.svg" class="shape shape--3">
+      <img src="./assests/circle.svg" class="shape shape--4">
+      <img src="./assests/triangle.svg" class="shape shape--2">
+      <img src="./assests/circle.svg" class="shape shape--5">
+      <img src="./assests/squiggly.svg" class="shape shape--6">
+      <img src="./assests/circle.svg" class="shape shape--7">
+      <img src="./assests/semicircle.svg  " class="shape shape--8">
+    
     </section>
     <section id="projects">
       <div class="container">
@@ -287,25 +303,28 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="#"
+              href="https://github.com/aganyo360"
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
             >
               Github
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/in/"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               LinkedIn
             </a>
             <a
               href="#"
+              onclick="ToggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Contact
             </a>
             <a
-              href="#"
+              href="./assests/resume.pdf" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume
