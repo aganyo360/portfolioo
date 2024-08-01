@@ -1,0 +1,8 @@
+<svg width="20" height="40" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50,200 
+           Q150,50 250,200 
+           T450,200" 
+        stroke="green" 
+        stroke-width="80" 
+        fill="none" />
+</svg>
